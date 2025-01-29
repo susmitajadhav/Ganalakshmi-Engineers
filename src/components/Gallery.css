@@ -1,0 +1,113 @@
+/* Base Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.top h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for image */
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+/* Image name styles */
+.image-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Image name hover effect */
+.gallery-item:hover .image-name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 1024px (Tablets and larger smartphones) */
+@media (max-width: 1024px) {
+    .gallery {
+        padding: 40px;  /* Reduce padding */
+    }
+
+    .gallery-item {
+        /* Adjust gallery item size for tablets */
+        margin: 0;
+    }
+
+    .image-name {
+        font-size: 14px; /* Slightly smaller font size for image name */
+        padding: 4px 8px;
+    }
+
+    /* Adjust grid layout to show 1-2 columns depending on screen size */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Reduce min size of the column */
+    }
+}
+
+/* For screens smaller than 768px (Mobile devices) */
+@media (max-width: 768px) {
+    .gallery {
+        padding: 20px; /* Further reduce padding for smaller devices */
+    }
+
+    .gallery-item {
+        /* Reduce item size */
+        margin: 0;
+    }
+
+    .image-name {
+        font-size: 12px; /* Further reduce font size for mobile */
+        padding: 3px 6px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;  /* Single column for mobile */
+    }
+}
+

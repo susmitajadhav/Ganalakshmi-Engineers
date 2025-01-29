@@ -1,0 +1,239 @@
+
+
+.about-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  color: #1a73e8;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-content, .about-values {
+  flex: 1;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+.about-values h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1a73e8;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-values li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1a73e8;
+}
+
+.about-history, .about-mission, .about-vision {
+  margin-bottom: 40px;
+}
+
+.about-history h3, .about-mission h3, .about-vision h3 {
+  font-size: 26px;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+.about-history p, .about-mission p, .about-vision p {
+  font-size: 18px;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+.about-mission p {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-left: 6px solid #1a73e8;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.about-vision p {
+  background-color: #f1f8e9;
+  padding: 20px;
+  border-left: 6px solid #81c784;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #1a73e8;
+  color: #ffffff;
+  font-size: 14px;
+  border-top: 2px solid #fff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content, .about-values {
+    margin-bottom: 20px;
+    flex: unset;
+    width: 100%;
+  }
+
+  .about-header h1 {
+    font-size: 36px;
+  }
+
+  .about-header p {
+    font-size: 16px;
+  }
+
+  .about-values li {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .about-history h3, .about-mission h3, .about-vision h3 {
+    font-size: 24px;
+  }
+
+  .about-history p, .about-mission p, .about-vision p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .about-header h1 {
+    font-size: 30px;
+  }
+
+  .about-header p {
+    font-size: 14px;
+  }
+
+  .about-section {
+    gap: 15px;
+  }
+
+  .about-values h3 {
+    font-size: 20px;
+  }
+
+  .about-values li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .about-mission p, .about-vision p {
+    padding: 15px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-header h1 {
+    font-size: 28px;
+  }
+
+  .about-header p {
+    font-size: 12px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-history h3, .about-mission h3, .about-vision h3 {
+    font-size: 22px;
+  }
+
+  .about-history p, .about-mission p, .about-vision p {
+    font-size: 14px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-content, .about-values {
+    padding: 15px;
+  }
+
+  .about-values li {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 10px;
+  }
+}

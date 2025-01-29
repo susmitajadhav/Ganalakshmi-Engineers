@@ -1,0 +1,203 @@
+/* Contact Page Styles */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+/* Left Side - Contact Form */
+.form-section {
+  padding: 30px;
+  background: #ffffff;
+}
+
+.form-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-section label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-top: 12px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+.form-section button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Side - Contact Info */
+.info-section {
+  background: #007bff;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 30px 15px; /* Adjust padding on smaller screens */
+  }
+
+  .contact-box {
+    padding: 20px; /* Reduced padding inside the box */
+  }
+
+  .form-section h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .form-section input,
+  .form-section textarea {
+    font-size: 14px; /* Adjust input and textarea font size */
+  }
+
+  .form-section button {
+    font-size: 14px; /* Adjust button font size */
+  }
+
+  .info-section h2 {
+    font-size: 20px; /* Adjust font size for the contact info header */
+  }
+
+  .info-section p {
+    font-size: 14px; /* Adjust font size for contact info */
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-links a {
+    font-size: 20px; /* Reduce icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: 20px 10px; /* Further reduce padding for mobile screens */
+  }
+
+  .form-section h2 {
+    font-size: 18px; /* Further adjust font size for mobile screens */
+  }
+
+  .form-section input,
+  .form-section textarea {
+    font-size: 13px; /* Adjust input and textarea font size */
+  }
+
+  .form-section button {
+    font-size: 13px; /* Adjust button font size for mobile */
+  }
+
+  .info-section h2 {
+    font-size: 18px; /* Adjust contact info header font size */
+  }
+
+  .info-section p {
+    font-size: 13px; /* Adjust contact info paragraph font size */
+  }
+
+  .social-links a {
+    font-size: 18px; /* Reduce icon size for mobile screens */
+  }
+}

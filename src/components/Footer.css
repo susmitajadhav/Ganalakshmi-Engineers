@@ -1,0 +1,147 @@
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #e67e22;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #e67e22;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #e67e22;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Adds spacing between sections */
+  }
+
+  .footer-section h2 {
+    font-size: 1.25rem; /* Smaller font size for h2 */
+  }
+
+  .footer-section p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 15px; /* Increase gap for better spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-section h2 {
+    font-size: 1.2rem; /* Further reduce heading size */
+  }
+
+  .footer-section p {
+    font-size: 0.85rem; /* Adjust text size for readability */
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 20px; /* Stack social icons vertically */
+  }
+
+  .social-icon {
+    font-size: 1.2rem; /* Increase size for better visibility */
+  }
+}

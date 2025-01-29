@@ -1,0 +1,109 @@
+/* Main Container */
+.services-page {
+  background-color: #f4f4f4; /* Light gray background */
+  font-family: "Poppins", sans-serif;
+  padding: 48px 24px; /* Matches Tailwind's 'py-12 px-6' */
+}
+
+/* Heading Section */
+.services-heading {
+  text-align: center;
+  margin-bottom: 48px; /* Matches 'mb-12' */
+}
+
+.services-heading h2 {
+  font-size: 2.25rem; /* Matches 'text-4xl' */
+  font-weight: 700; /* Matches 'font-bold' */
+  color: #1f2937; /* Matches 'text-gray-800' */
+}
+
+.services-heading p {
+  margin-top: 16px; /* Matches 'mt-4' */
+  color: #4b5563; /* Matches 'text-gray-600' */
+  font-size: 1rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  gap: 32px; /* Matches 'gap-8' */
+ 
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+  .services-heading h2 {
+    font-size: 1.75rem; /* Adjust font size for smaller screens */
+  }
+
+  .services-heading p {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Three columns for desktops */
+  }
+  .services-heading h2 {
+    font-size: 2rem; /* Larger font for desktops */
+  }
+
+  .services-heading p {
+    font-size: 1rem; /* Larger font for desktops */
+  }
+}
+
+/* Service Card */
+.service-card {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Matches 'shadow-lg' */
+  border-radius: 12px; /* Matches 'rounded-xl' */
+  padding: 15px; /* Matches 'p-6' */
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Matches Tailwind's transition */
+}
+
+.service-card:hover {
+  transform: translateY(-12px); /* Matches 'hover:-translate-y-3' */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Matches 'hover:shadow-2xl' */
+}
+
+/* Icon */
+.service-card .icon {
+  font-size: 3rem; /* Matches 'text-5xl' */
+}
+
+/* Title */
+.service-card h3 {
+  font-size: 1.25rem; /* Matches 'text-xl' */
+  font-weight: 600; /* Matches 'font-semibold' */
+  color: #1f2937; /* Matches 'text-gray-800' */
+  margin-top: 16px; /* Matches 'mt-4' */
+}
+
+/* Description */
+.service-card p {
+  margin-top: 8px; /* Matches 'mt-2' */
+  color: #6b7280; /* Matches 'text-gray-600' */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Link Style */
+.more-details-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.more-details-link:hover {
+  text-decoration: underline;
+}
