@@ -13,11 +13,11 @@ const Header = () => {
       <div className="logo">MyLogo</div>
       <nav className="nav">
         <ul className="nav-links">
-          <li><a href="#/">Home</a></li>
-          <li><a href="#/gallery">Gallery</a></li>
-          <li><a href="#/aboutus">About</a></li>
-          <li><a href="#/product">Products</a></li>
-          <li><a href="#/getquote" className="get-quote-btn">Get Quote</a></li>
+          <li><a href="/Ganalakshmi-Engineers/">Home</a></li>
+          <li><a href="/Ganalakshmi-Engineers/gallery">Gallery</a></li>
+          <li><a href="/Ganalakshmi-Engineers/aboutus">About</a></li>
+          <li><a href="/Ganalakshmi-Engineers/product">Products</a></li>
+          <li><a href="/Ganalakshmi-Engineers/getquote" className="get-quote-btn">Get Quote</a></li>
         </ul>
         <button className="show-all-btn" onClick={toggleSideMenu}>Menu</button>
       </nav>
