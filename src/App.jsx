@@ -35,7 +35,7 @@ const Home = () => {
 // App Component
 const App = () => {
   return (
-    <Router> {/* Changed to HashRouter for GitHub Pages */}
+    <Router basename="/Ganalakshmi-Engineers"> {/* Changed to HashRouter for GitHub Pages */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/herosection" element={<HeroSection />} />
