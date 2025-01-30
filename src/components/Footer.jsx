@@ -18,10 +18,10 @@ const Footer = () => {
         <div className="footer-section">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/aboutus">About</a></li>
-            <li><a href="/product">Products</a></li>
-            <li><a href="/contactpage">Contact</a></li>
+            <li><a href="/Ganalakshmi-Engineers/">Home</a></li>
+            <li><a href="/Ganalakshmi-Engineers/aboutus">About</a></li>
+            <li><a href="/Ganalakshmi-Engineers/product">Products</a></li>
+            <li><a href="/Ganalakshmi-Engineers/contactpage">Contact</a></li>
           </ul>
         </div>
 
